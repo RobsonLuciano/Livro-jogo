@@ -1,0 +1,46 @@
+{
+    "Monstros":{
+        "homem_lagarto": {
+            "nome":"Homem-Lagarto",
+            "habilidade":7,
+            "energia":8,
+            "ataque":1
+        },
+        "orc": {
+            "nome":"Orc",
+            "habilidade":7,
+            "energia":8,
+            "ataque":1
+        },
+        "orc_escravizado": {
+            "nome":"Orc escravizado",
+            "habilidade":6,
+            "energia":7,
+            "ataque":1
+        },
+        "goblin": {
+            "nome":"Goblin",
+            "habilidade":6,
+            "energia":5,
+            "ataque":1
+        },
+        "capataz_lagarto": {
+            "nome":"Capataz Lagarto",
+            "habilidade":10,
+            "energia":10,
+            "ataque":2
+        },
+        "chefe_trancascamas": {
+            "nome":"Chefe Trançascamas",
+            "habilidade":10,
+            "energia":14,
+            "ataque":2
+        },
+        "template": {
+            "nome":"Template",
+            "habilidade":0,
+            "energia":0,
+            "ataque":0
+        }
+    }
+}

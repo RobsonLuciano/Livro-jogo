@@ -1,0 +1,41 @@
+{
+    "armas": {
+        "espada": {
+            "nome": "Espada",
+            "bonus": { "habilidadeMax": 0 }
+        },
+        "adaga_prata": {
+            "nome": "Adaga de Prata",
+            "bonus": { "habilidadeMax": -1 }
+        },
+        "machado": {
+            "nome": "Machado",
+            "bonus": { "habilidadeMax": 2 }
+        }
+    },
+ 
+    "armaduras": {
+        "elmo_ferro": {
+            "nome": "Elmo de Ferro",
+            "slot": "capacete",
+            "bonus": { "habilidadeMax": 1 }
+        },
+        "couraca_couro": {
+            "nome": "Couraça de Couro",
+            "slot": "armadura",
+            "bonus": { "habilidadeMax": 1 }
+            },
+        "escudo_madeira": {
+            "nome": "Escudo de Madeira",
+            "slot": "escudo",
+            "bonus": { "habilidadeMax": 0 }
+        }
+    },
+    
+    "acessorios": {
+        "anel_fortuna": {
+            "nome": "Anel da Fortuna",
+            "bonus": { "sorteMax": 1 }
+        }
+    }
+ }

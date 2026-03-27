@@ -1,0 +1,24 @@
+{
+    "itens": {
+        "pocao_habilidade": {
+            "nome": "Poção da Habilidade",
+            "tipo": "consumivel",
+            "efeito": "restaurar_habilidade",
+            "bonus": {}
+        },
+        
+        "pocao_energia": {
+            "nome": "Poção da Energia",
+            "tipo": "consumivel",
+            "efeito": "restaurar_energia",
+            "bonus": {}
+        },
+        
+        "pocao_fortuna": {
+            "nome": "Poção da Fortuna",
+            "tipo": "consumivel",
+            "efeito": "aumentar_sorte_max",
+            "bonus": {}
+        }
+    }
+}

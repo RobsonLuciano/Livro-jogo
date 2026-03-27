@@ -1,0 +1,466 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ /*Geral*/
+ html, body {
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+ }
+ body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ min-height: 100vh;
+ background-color: #a4b9ff;
+ }
+ main {
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ max-width: 610px;
+ width: 100%;
+ margin: auto; 
+ }
+ section {
+ font-family: "Palatino Linotype", "Palatino", "Book Antiqua", "Merriweather", serif;
+ line-height: 1.6;
+ color: #472b01;
+ border: 4px ridge #D4AF37; /* Dourado metálico clássico */
+ box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+ padding: 10px;
+ margin: 10px 5px;
+ background-color: #eef5ff;
+ /*background-image: url('./imagens/section_02.png');*/
+ }
+ header, footer {
+ padding: 10px;
+ width: 100%;
+ background-size: contain;
+ background-color: rgb(47, 47, 151);
+ font-family: 'Cinzel', serif;
+ color: white;
+ text-align: center;
+ }
+ 
+ /*Específicos*/
+ h2 {
+ font-family: 'Cinzel', serif;
+ text-decoration: underline;
+ padding-bottom: 5px;
+ text-align: center;
+ }
+ h3 {
+ font-family: 'Cinzel', serif;
+ text-decoration: underline;
+ padding-bottom: 5px;
+ }
+ button {
+ transition: all 0.2s ease;
+ }
+ 
+ /*Jogo*/
+ .box_game {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ max-width: 580px;
+ width: 100%;
+ }
+ .boxGame {
+ display: flex;
+ flex-direction: column;
+ /*align-items: center;*/
+ align-items: flex-start;
+ text-align: left;
+ }
+ 
+ /*Botões no jogo*/
+ .btnGame{
+ width: 100px;
+ height: 30px;
+ background-color: #e9c345;
+ border: 2px outset #fcd7b5;
+ padding: 0;
+ margin: 5px;
+ cursor: pointer;
+ box-shadow: 2px 2px 1px #0000004d;
+ color: #572a05;
+ }
+ .btnGame:hover {
+ background-color: #f0d79a;
+ transform: scale(1.05);
+ transition: 0.2s;
+ }
+ 
+ /*Notas*/
+ input[type="text"] {
+ max-width: 500px;
+ padding: 5px;
+ border: 1px solid #bbbbbb;
+ box-sizing: border-box; 
+ margin: 5px;
+ }
+ .textNotas {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: justify;
+ border: 1px solid rgb(11, 0, 51);
+ padding: 5px;
+ margin: 5px;
+ width: 100%;
+ gap: 8px;
+ }
+ #notaTexto {
+ flex: 1;
+ min-width: 0;
+ }
+ .btnNotas {
+ width: 100px;
+ height: 30px;
+ flex-shrink: 0;
+ margin: 5px;
+ padding: 0;
+ background-color: #1547eb;
+ border: 2px outset #ffffff;
+ cursor: pointer;
+ box-shadow: 2px 2px 1px #0000004d;
+ color: #e9edff;
+ }
+ .btnNotas:hover {
+ background-color: #6589ff;
+ transform: scale(1.05);
+ transition: 0.2s;
+ }
+ 
+ /*Botões referências*/
+ .box_refs{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ max-width: 580px;
+ min-width: 240px;
+ }
+ .refs {
+ width: 110px;
+ height: 30px;
+ margin: 5px;
+ padding: 0;
+ background-color: #a4b9ff;
+ border: 2px outset #ffffff;
+ cursor: pointer;
+ box-shadow: 2px 2px 1px #0000004d;
+ color: #00115a;
+ }
+ .refs:hover {
+ background-color: #b4c6ff;
+ transform: scale(1.05);
+ transition: 0.2s;
+ }
+ .btnRestart {
+ width: 150px;
+ }
+ 
+ /*Menu*/
+ .box_menu {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: 10px 10px 10px 10px;
+ min-width: 240px;
+ max-width: 600px;
+ }
+ .menu{
+ width: 200px;
+ height: 30px;
+ margin: 5px;
+ padding: 0;
+ background-color: #1547eb;
+ border: 2px outset #ffffff;
+ cursor: pointer;
+ box-shadow: 2px 2px 1px #0000004d;
+ color: #e9edff;
+ }
+ .menu:hover {
+ background-color: #6589ff;
+ transform: scale(1.05);
+ transition: 0.2s;
+ } 
+ #voltarMenu {
+ width: 100px;
+ }
+ .textMenu {
+ display: flex;
+ flex-direction: column;
+ text-align: justify;
+ border: 4px ridge rgb(11, 0, 51, 0.800);
+ box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+ background-color: #00093f1c;
+ padding: 10px 10px 10px 10px;
+ margin: 10px;
+ max-width: 580px;
+ width: 100%;
+ }
+ .menuCxLinha {
+ display: flex;
+ flex-direction: row;
+ text-align: left;
+ width: 100%;
+ }
+ .menuCaixa {
+ background-color: #00000017;
+ border: 2px outset #fbfdff;
+ border-radius: 5px;
+ padding: 10px;
+ margin: 3px;
+ width: 100%;
+ }
+ .menuCaixa p {
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+ 
+ /*Lutaria e Brigação*/
+ .lutCabWrapper {
+ display: flex;
+ justify-content: center;
+ border: 4px ridge rgb(11, 0, 51, 0.800);
+ box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+ padding: 10px;
+ margin: 5px;
+ max-width: 580px;
+ width: 100%;
+ min-height: 70px;
+ background-color: #09195e;
+ /*background-image: url('./imagens/battle_cab04.avif');*/
+ }
+ .lutCab {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ text-align: left;
+ }
+ .lutCabBoton {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ border: 4px ridge rgb(11, 0, 51, 0.800);
+ box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+ padding: 5px;
+ margin: 5px;
+ width: 100%;
+ background-color: #09195e;
+ /*background-image: url('./imagens/battle_cab04.avif');*/
+ }
+ .lutaria {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color:#f5dabf;
+ border: 4px ridge rgba(11, 0, 51, 0.800);
+ box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+ padding: 5px;
+ margin: 5px;
+ min-height: 270px;
+ width: 100%;
+ background-color: #09195e;
+ /*background-image: url('./imagens/battle_cab04.avif');*/
+ }
+ .resultado {
+ max-width: 355px;
+ }
+ .sorteBtl {
+ max-width: 355px;
+ min-height: 120px;
+ }
+ #atkH, #atkM {
+ width: 200px;
+ height: 45px;
+ margin: 5px;
+ }
+ #SSB, #NSB {
+ width: 60px;
+ margin: 5px;
+ }
+ #restart {
+ width: 130px;
+ margin: 5px;
+ }
+ 
+ /*Títulos*/
+ .titulo {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ background-color: #000d20;
+ /*background-image: url('./imagens/titulo01.jpg');*/
+ padding: 5px 5px 5px 5px;
+ margin: 5px 5px 5px 5px;
+ border: 5px ridge #D4AF37; 
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ max-width: 580px;
+ width: 100%;
+ height: 70px;
+ }
+ 
+ /*Diagramação*/
+ .linha {
+ width: 100%;
+ }
+ .negrito {
+ font-weight: bold;
+ }
+ .sublinhado {
+ text-decoration: underline;
+ }
+ .centro {
+ text-align: center;
+ }
+ .itemCentro {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ }
+ 
+ /*Efeitos nas palavras*/
+ /* =============
+ NOME DO HERÓI
+ ============== */
+ .nomeHeroi{
+ font-weight: bold;
+ color: #7ec8ff;
+ 
+ text-shadow:
+ 0 0 3px #000c27,
+ 0 0 6px rgba(80,170,255,0.7),
+ 1px 1px 2px #000c27;
+ 
+ letter-spacing: 1px;
+ }
+ /*================
+ NOME DO MONSTRO
+ ================ */
+ .nomeMonstro{
+ font-weight: bold;
+ color: #ff5a5a;
+ 
+ text-shadow:
+ 0 0 3px #220000,
+ 0 0 6px rgba(189, 0, 0, 0.8),
+ 1px 1px 2px #220000;
+ 
+ letter-spacing: 1px;
+ }
+ /* =========
+ ERVA RARA
+ ========== */
+ .ervaRara{
+ font-weight: bold;
+ color: #45ffe6;
+ 
+ text-shadow:
+ 0 0 3px #00270d,
+ 0 0 6px rgba(80, 255, 173, 0.7),
+ 1px 1px 2px #00270d;
+ 
+ letter-spacing: 1px;
+ }
+ /* ==================================
+ TITULOS (menu)
+ Dourado arqueológico
+ =================================== */
+ .palavraTitulo{
+ font-weight:bold;
+ color:#f5d27a;
+ 
+ text-shadow:
+ 1px 1px 16px rgba(238, 163, 34, 0.5),
+ 1px 1px 16px rgba(255, 210, 104, 0.7),
+ 1px 1px 16px rgba(252, 226, 182, 0.5);
+ }
+ /* ======================================
+ ATRIBUTOS (Habilidade, Energia, Sorte)
+ Forte, sólido, confiável
+ ======================================= */
+ .palavraAtributo{
+ font-weight:bold;
+ color:#e6f1ff;
+ 
+ text-shadow:
+ 0 0 3px #000,
+ 0 0 6px #000,
+ 1px 1px 6px rgba(80,150,255,0.6);
+ }
+ /* ==================================
+ ITENS (espadas, poções, relíquias)
+ Dourado velho
+ =================================== */
+ .palavraItem{
+ font-weight:bold;
+ color:#f5b513c9;
+ 
+ text-shadow:
+ 0 0 3px #000,
+ 0 0 6px #000,
+ 1px 1px 12px rgba(94, 60, 3, 0.6);
+ }
+ /* ===================================
+ PERIGO (armadilhas, dano, inimigos)
+ Vermelho ameaçador
+ ==================================== */
+ .palavraPerigo{
+ font-weight:bold;
+ color:#ff6e6e;
+ 
+ text-shadow:
+ 0 0 3px #000,
+ 0 0 6px rgba(255, 22, 22, 0.8),
+ 1px 1px 2px #000;
+ }
+ /* ====================================
+ MAGIA (feitiços, artefatos, energia)
+ Brilho arcano
+ ===================================== */
+ .palavraMagia{
+ font-weight:bold;
+ color:#b98cff;
+ 
+ text-shadow:
+ 0 0 3px #0f002e,
+ 0 0 6px #9d6bff,
+ 1px 1px 2px rgba(20, 0, 44, 0.9);
+ }
+ 
+ /*Linha separatória no texto*/
+ .linhaPergaminho{
+ width:100%;
+ height:2px;
+ margin:10px 0;
+ display:block;
+ align-self:stretch;
+ background:linear-gradient(
+ to right,
+ transparent,
+ #c2a36b,
+ #f0d79a,
+ #c2a36b,
+ transparent
+ );
+ }
