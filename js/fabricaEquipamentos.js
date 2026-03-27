@@ -6,11 +6,11 @@ let dadosEquip = null;
 let dadosItens = null;
  
 export async function carregarDados() {
-    const respEquip = await fetch("/dados/equipamentos.json");
+    const respEquip = await fetch("./dados/equipamentos.json");
     if (!respEquip.ok) throw new Error("Erro ao carregar equipamentos.json");
     dadosEquip = await respEquip.json();
     
-    const respItens = await fetch("/dados/itens.json");
+    const respItens = await fetch("./dados/itens.json");
     if (!respItens.ok) throw new Error("Erro ao carregar itens.json");
     dadosItens = await respItens.json();
 }
