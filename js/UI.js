@@ -587,8 +587,8 @@ class UI {
                     <div id="06_luta">
                         <p>Você corre às correntes! <span class="palavraAtributo">Teste a Sorte</span> para soltar rápido: 
                         <button class="btnGame" id="correntesS">Testar Sorte</button></p>
-                        <div id="sorteCorrentes"></div><
-                    /div>
+                        <div id="sorteCorrentes"></div>
+                    </div>
                 </div></div>`;
                 
                 this.refBtn.innerHTML = `
