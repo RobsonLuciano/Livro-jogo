@@ -74,6 +74,8 @@ O projeto foi desenvolvido com foco em:
 
 ## ▶️ Como Executar o Projeto
 
+Acesse o projeto online: https://robsonluciano.github.io/Livro-jogo/
+
 Devido ao uso de `fetch()` para carregar arquivos JSON, o projeto precisa ser executado em um servidor local.
 
 ### Opção 1 — VS Code (Recomendado)
