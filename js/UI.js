@@ -497,7 +497,7 @@ class UI {
                             <button class="btnGame" id="lutaria">Vai encarar?</button>
                             <button class="btnGame" id="fuga">Ou fugir?</button>
                         </div>
-                    /div>
+                    </div>
                 </div></div>`;
                 
                 this.refBtn.innerHTML = `
