@@ -200,6 +200,7 @@ input[type="text"] {
 .textMenu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: justify;
     border: 4px ridge rgb(11, 0, 51, 0.800);
     box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
@@ -211,6 +212,7 @@ input[type="text"] {
  .menuCxLinha {
     display: flex;
     flex-direction: row;
+    align-items: center;
     text-align: left;
     width: 100%;
 }
@@ -248,12 +250,12 @@ input[type="text"] {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border: 4px ridge rgb(11, 0, 51, 0.800);
     box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
     padding: 5px;
     margin: 5px;
-    width: 100%;
+    width: 580px;
     background-color: #09195e;
     /*background-image: url('./imagens/battle_cab04.avif');*/
 }
@@ -269,7 +271,7 @@ input[type="text"] {
     padding: 5px;
     margin: 5px;
     min-height: 270px;
-    width: 100%;
+    width: 580px;
     background-color: #09195e;
     /*background-image: url('./imagens/battle_cab04.avif');*/
 }
@@ -460,109 +462,52 @@ Brilho arcano
 
 @media (max-width: 460px) {
 
-     /*Jogo*/
-    .box_game {
+    h1 {
+        font-size: medium;
+    }
+
+    footer p {
+        font-size: small;
+    }
+
+    /*Notas*/
+    .textNotas {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
+        flex-direction: column;
+    }
+
+    /*Jogo*/
+    .box_game {
+        padding: 0px;
         width: 100%;
-        
     }
 
     /*Títulos*/
     .titulo {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        background-color: #000d20;
-        /*background-image: url('./imagens/titulo01.jpg');*/
-        padding: 5px 5px 5px 5px;
-        margin: 5px 5px 5px 5px;
-        border: 5px ridge #D4AF37; 
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        max-width: 580px;
         width: 100%;
         height: 100px;
     }
 
     /*Menu*/
     .box_menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 10px 10px 10px;
         min-width: 240px;
         width: 100%;
-    }
-    .menu{
-        width: 200px;
-        height: 30px;
-        margin: 5px;
-        padding: 0;
-        background-color: #1547eb;
-        border: 2px outset #ffffff;
-        cursor: pointer;
-        box-shadow: 2px 2px 1px #0000004d;
-        color: #e9edff;
-    }
-    .menu:hover {
-        background-color: #6589ff;
-        transform: scale(1.05);
-        transition: 0.2s;
-    } 
-    #voltarMenu {
-        width: 100px;
+        padding: 0px;
     }
     .textMenu {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        border: 4px ridge rgb(11, 0, 51, 0.800);
-        box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
-        background-color: #00093f1c;
-        padding: 10px 10px 10px 10px;
-        margin: 10px;
-        
-        
+        padding: 5px;
     }
     .menuCxLinha {
         display: flex;
         flex-direction: column;
         text-align: left;
-        
-    }
-    .menuCaixa {
-        background-color: #00000017;
-        border: 2px outset #fbfdff;
-        border-radius: 5px;
-        padding: 10px;
-        margin: 3px;
-        
     }
     
     /*Lutaria e Brigação*/
-    .lutCabWrapper {
-        display: flex;
-        justify-content: center;
-        border: 4px ridge rgb(11, 0, 51, 0.800);
-        box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
-        padding: 10px;
-        margin: 5px;
-        max-width: 580px;
-        width: 100%;
-        min-height: 70px;
-        background-color: #09195e;
-        /*background-image: url('./imagens/battle_cab04.avif');*/
-    }
-    .lutCab {
+    .boxCel {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        align-items: center;
     }
     .lutCabBoton {
         display: flex;
@@ -570,50 +515,10 @@ Brilho arcano
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        border: 4px ridge rgb(11, 0, 51, 0.800);
-        box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
-        padding: 5px;
-        margin: 5px;
         width: 100%;
-        background-color: #09195e;
-        /*background-image: url('./imagens/battle_cab04.avif');*/
     }
     .lutaria {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color:#f5dabf;
-        border: 4px ridge rgba(11, 0, 51, 0.800);
-        box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
-        padding: 5px;
-        margin: 5px;
-        min-height: 270px;
         width: 100%;
-        background-color: #09195e;
-        /*background-image: url('./imagens/battle_cab04.avif');*/
     }
-    .resultado {
-        max-width: 355px;
-    }
-    .sorteBtl {
-        max-width: 355px;
-        min-height: 120px;
-    }
-    #atkH, #atkM {
-        width: 200px;
-        height: 45px;
-        margin: 5px;
-    }
-    #SSB, #NSB {
-        width: 60px;
-        margin: 5px;
-    }
-    #restart {
-        width: 130px;
-        margin: 5px;
-    }
- 
 }
 
