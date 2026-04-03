@@ -482,19 +482,6 @@ Brilho arcano
         width: 100%;
     }
 
-    /*Refs*/
-    .refs {
-        width: 110px;
-        height: 30px;
-        margin: 0px;
-        padding: 0;
-        background-color: #a4b9ff;
-        border: 2px outset #ffffff;
-        cursor: pointer;
-        box-shadow: 2px 2px 1px #0000004d;
-        color: #00115a;
-    }
-
     /*Títulos*/
     .titulo {
         width: 100%;
